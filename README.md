@@ -6,7 +6,7 @@ Construction d'une application : dictionnaire anglais. L'internaute doit taper u
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/english_dictionnary_app/
 
 ## Développez avec
 
