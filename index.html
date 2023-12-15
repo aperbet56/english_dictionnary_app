@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Dictionnary App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>English dictionnary app</h1>
+    </header>
+    <main class="main__content">
+      <section class="container">
+        <div class="search">
+          <input type="text" placeholder="search a word..." required />
+          <i class="fas fa-search"></i>
+          <span class="fas fa-times" id="delete__icon"></span>
+        </div>
+        <h2 class="info__text">
+          Type a word and press enter to get meaning, example, pronunciation and
+          synonyms of that typed word.
+        </h2>
+        <ul>
+          <li class="word">
+            <div class="details">
+              <p></p>
+              <span></span>
+            </div>
+          </li>
+          <div class="content">
+            <li class="meaning">
+              <div class="details">
+                <p>Meaning</p>
+                <span></span>
+              </div>
+            </li>
+            <li class="synonyms">
+              <div class="details">
+                <p>Synomyms</p>
+                <div class="list"></div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <span>Site web créé par aperbet</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
