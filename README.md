@@ -16,6 +16,7 @@ Lien vers le projet : https://aperbet56.github.io/english_dictionnary_app/
 - Animations CSS
 - Page web responsive
 - Utilisation d'un normaliseur : le fichier normalize.css
+- Free dictionary API : https://dictionaryapi.dev/
 - JavaScript
 - Code JavaScript commenté
 - Desktop first
