@@ -1,4 +1,4 @@
-## ENGLISH DICTIONNARY APP
+## ENGLISH DICTIONARY APP
 
 ## Le challenge
 
