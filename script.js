@@ -8,8 +8,8 @@ const removeIcon = document.querySelector("#delete__icon");
 // FetchAPI function
 const fetchAPI = (word) => {
   container.classList.remove("active");
-  infoText.style.color = "#000000";
-  infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
+  infoText.style.color = "#2b2c34";
+  infoText.textContent = `Searching the meaning of${word}`;
   let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
   // Fetch api response
   fetch(url)
@@ -29,7 +29,7 @@ const search = (word) => {
 const data = (result, word) => {
   if (result.title) {
     // If api returns the message of can't find word
-    infoText.textContent = `Can't find the meaning of <span>${word}</span>. Please try again.`;
+    infoText.textContent = `Can't find the meaning of ${word}. Please try again.`;
   } else {
     console.log(result);
     container.classList.add("active");
@@ -71,6 +71,6 @@ removeIcon.addEventListener("click", () => {
   // The HTMLElement.focus() method sets focus on the specified element, if it can be focused. The focused element is the element that will receive keyboard and similar events by default.
   searchInput.focus();
   container.classList.remove("active");
-  infoText.style.color = "#9a9a9a";
+  infoText.style.color = "#2b2c34";
   infoText.textContent = `Type a word and press enter !`;
 });
