@@ -1,3 +1,7 @@
+/**** Importation de la police "Alan Sans" ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
 /**** Reset ****/
 
 * {
@@ -16,12 +20,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0093e9;
-    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);    
-    font-family: sans-serif;
+    background-color: #d1d1e9;
+    color: #2b2c34;
+    font-family: "Alan Sans", sans-serif;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +36,7 @@ header, footer {
 header h1 {
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px; 
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -48,9 +53,14 @@ header h1 {
 
 .container {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #fffffe;
     border-radius: 9px;
     padding: 30px 30px 45px;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.69);
 }
 
 .search {
@@ -63,14 +73,16 @@ header h1 {
     height: 53px;
     font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #999999;
+    border: 2px solid #2b2c34;
     padding: 0 42px;
+    transition: all 0.3s ease-out;
 }
 
 .search input:focus {
     padding: 0 41px;
-    border: 2px solid #0093e9;
+    border: 2px solid #6246ea;
 }
+
 .search input::placeholder {
     color: #b8b8b8;
 }
@@ -88,8 +100,8 @@ header h1 {
     pointer-events: none;
 }
 
-.search input:focus ~ i {
-    color: #0093e9;
+.search input:focus~i {
+    color: #6246ea;
 }
 
 .search span {
@@ -100,16 +112,16 @@ header h1 {
 }
 
 .search span:hover {
-    color: #ff0000;
+    color: #e45858;
 }
 
-.search input:valid ~ span {
+.search input:valid~span {
     display: block;
 }
 
 .text__info {
     font-size: 13px;
-    color: #9a9a9a;
+    color: #2b2c34;
     margin: -3px 0 -10px;
 }
 
@@ -129,7 +141,7 @@ ul {
 }
 
 .container.active ul {
-    height: 303px;
+    height: auto;
     opacity: 1;
 }
 
@@ -176,7 +188,7 @@ ul .content::-webkit-scrollbar {
 .content li .details {
     padding-left: 10px;
     border-radius: 4px 0 0 4px;
-    border-left: 3px solid #0093e9;
+    border-left: 3px solid #6246ea;
 }
 
 .content li .details p {
@@ -193,6 +205,7 @@ ul .content::-webkit-scrollbar {
     line-height: 1.4;
     padding: 10px;
 }
+
 .synonyms .details .list {
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +218,11 @@ ul .content::-webkit-scrollbar {
 }
 
 .synonyms .details .list span:hover {
-    color: #0093e9;
+    color: #6246ea;
+}
+
+footer {
+    margin-top: 20px;
 }
 
 footer span {
