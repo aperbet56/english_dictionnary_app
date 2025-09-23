@@ -1,4 +1,6 @@
-## ENGLISH DICTIONARY APP
+## ENGLISH DICTIONARY APP 🇬🇧
+
+![Design preview for the project](./img/preview.png)
 
 ## Le challenge
 
@@ -8,7 +10,7 @@ Construction d'une application : dictionnaire anglais. L'internaute doit taper u
 
 Lien vers le projet : https://aperbet56.github.io/english_dictionnary_app/
 
-## Développez avec
+## Projet développé avec
 
 - Utilisation des balises sémantiques HTML5
 - CSS
