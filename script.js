@@ -9,12 +9,13 @@ const removeIcon = document.querySelector("#delete__icon");
 const fetchAPI = (word) => {
   container.classList.remove("active");
   infoText.style.color = "#2b2c34";
-  infoText.textContent = `Searching the meaning of${word}`;
+  infoText.textContent = `Searching the meaning of ${word}`;
   let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
   // Fetch api response
   fetch(url)
     .then((res) => res.json())
-    .then((result) => data(result, word)); // Function data call
+    .then((result) => data(result, word)) // Function data call
+    .catch((error) => console.error(error));
 };
 
 // Search synonyms function
